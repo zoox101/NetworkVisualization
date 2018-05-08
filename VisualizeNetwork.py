@@ -59,8 +59,8 @@ class NetworkGrapher:
                 'size': size})
 
         #Adding label
-        if label == None: label = f'Layer {len(self.layers)}'
-        net._add_text(self.top_left, label)
+        if label == None: label = 'Layer ' + str(len(self.layers))
+        self._add_text(self.top_left, label)
 
         #Adds a rectangle
         top_left = np.array(self.top_left)
